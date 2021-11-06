@@ -1,0 +1,2 @@
+#Slicer script to start the print (IdeaMaker) - passes the retraction amount for Extruder1 and Pressure Advance
+START_PRINT RET_LENGTH={retraction_amount1} PA=0.2
