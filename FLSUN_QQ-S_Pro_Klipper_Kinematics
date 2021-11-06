@@ -1,0 +1,49 @@
+#FLSUN QQ-S Pro Starter Kinematics
+#These kinematics worked well for me and gave me a better initial Delta Calibrate result. You may have to tweak your delta radius after the calibration is done. Pins are for the factory Robin Mini (FLSUN HISPEED)
+
+[printer]
+kinematics: delta
+max_velocity: 250
+max_accel: 2000
+max_z_velocity: 200
+minimum_z_position: -5
+print_radius: 130
+delta_radius = 144
+
+[stepper_a]
+#front left tower
+step_pin: PE3
+dir_pin: !PE2
+enable_pin: !PE4
+rotation_distance: 32
+endstop_pin: ~PA15
+microsteps: 16
+homing_speed: 75
+position_endstop: 381.9
+angle: 210
+arm_length: 280
+
+
+[stepper_b]
+#front right tower
+step_pin: PE0
+dir_pin: !PB9
+enable_pin: !PE1
+rotation_distance: 32
+endstop_pin: ~PA12
+microsteps: 16
+position_endstop: 381.3
+angle: 330
+arm_length: 280
+
+[stepper_c]
+#rear tower
+step_pin: PB5
+dir_pin: !PB4
+enable_pin: !PB8
+rotation_distance: 32
+endstop_pin: ~PC4
+microsteps: 16
+position_endstop = 381.3
+angle = 90
+arm_length = 280
